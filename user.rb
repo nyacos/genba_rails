@@ -1,9 +1,7 @@
 class User
-    def name=(name)
-        @name = name
-    end
+    attr_accessor :name, :address, :email
 
-    def name
-        @name
+    def profile
+        "#{name}(#{address})"
     end
 end
